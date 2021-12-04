@@ -1,3 +1,15 @@
+
+//button onclick="showeb()">Display Menu</button>
+
+
+
+
+
+
+
+
+
+
 //<button onclick="create()">Terms & Conditions</button>
 //			<button onclick="Privacy()">Privacy</button>
 //			<button onclick="Covid()">Covid Update</button>
@@ -13,3 +25,4 @@ function Covid(){
 		alert("It is important that businesses should check photo ID when checking Proof of Immunity. There are some limited circumstances when this may not be necessary e.g. where a person is well-known to the business. Unaccompanied minors are required to present Proof of Immunity. Outdoor Hospitality can continue to operate for customers who are unable to provide evidence of COVID-19 vaccination or immunity following recovery. A maximum of 15 people including no more than 10 adults may be seated at a table.")
 
 }
+
