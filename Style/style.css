@@ -1,21 +1,21 @@
 body{
 	margin:0px;
 	font-family:Helvetica;
-	color:white;
-	background:#30ab67;	
+	color:Navy;
+	background:white;	
 	line-height:1.5;
 }
 #header, #main, #footer{
 	display:flex;
 }
 #header{
-	background:#30ab67;
+	background:#0E0526;
 	font-size:200%;
 }
 
 #main{
 	min-height:600px;
-	background:#30ab67;
+	background:white;
 	font-size:150%;
 }
 #header1{
@@ -41,7 +41,7 @@ body{
 	padding:5%;
 }
 a{
-	color:white;
+	color:navy;
 }
 input,textarea{
 	font-size:50pt;
@@ -57,22 +57,23 @@ input,textarea{
 	}
 
 .column{
-		background-color: #16E761;
+		background-color: white;
 		border:1px #ccc solid;
-		text-align: centre;
-		float: left;
+		text-align: center;
+		float: right;
 		width: 33.33%;
-		padding: 30px;
+		padding-left: 30px;
 		height: 300px
-		justify-content: center;
+		
 }	
 button{
-		background-color:black;
-		color:white;
-		text-align:centre;
+		background-color: inherit;
+		color: Navy;
+		text-align:center;
+		
 }
 h1{
-	color: White;
+	color: Navy;
 	font-size:14;
 	font-family: Georgia;
 	text-align:center;
@@ -88,3 +89,87 @@ h1{
   padding: 5px;
 }
 	
+.central {
+  text-align:center;
+}
+
+.table_reserve_box {
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: #c6badc;
+    box-shadow: 3px 5px 10px #7527b0;
+}
+.container4{
+		display:flex;
+		flex-basis:30%;
+		justify-content: center;
+		background-color: light blue;
+		margin: 200px;
+		box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+		display: grid;
+		grid-template-columns: 80%;
+		grid-template-rows: 15%;	
+		padding-left:30px;
+}
+.container-time {
+		background-color: rgba(0, 0, 0, .95);
+		padding: 50px;
+		outline: 3px dashed #998100;
+		outline-offset: -30px;
+		text-align: center;
+}
+.container4-form {
+		padding: 20px 0;
+		margin: 0 auto;
+		color: Navy;
+}
+form {
+		display: grid;
+		
+		grid-row-gap: 10px;
+}
+form p {
+		font-weight: 600;
+}
+.form-field {
+		font-size: 12;
+		display: flex;
+		justify-content: space-between;
+}
+
+input,select {
+		padding: 10px 15px;
+}
+.btn {
+background-color: rgba(0, 0, 0, .95);
+color: #fff;
+padding: 10px 20px;
+border: none;
+font-size: 18px;
+border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+-ms-border-radius: 100px;
+-o-border-radius: 100px;
+box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+cursor: pointer;
+transition: all .3s;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-ms-transition: all .3s;
+-o-transition: all .3s;
+}
+
+.btn:hover {
+transform: scale(1.03);
+-webkit-transform: scale(1.03);
+-moz-transform: scale(1.03);
+-ms-transform: scale(1.03);
+-o-transform: scale(1.03);
+box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+script src="http://code.jquery.com/jquery-1.10.2.js"></script>
