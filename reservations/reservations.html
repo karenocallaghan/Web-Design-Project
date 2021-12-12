@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Katrine's Kitchen & Bar</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="Style/style.css"/> -->		
+		
+	</head>
+	
+	<body>
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-4">
+					<img src="../images/katrines.jpg" alt="logo" width="200" height="200">
+				</div>
+				<div class="col-8"> 
+					<h1>Katrine's Kitchen & Bar</h1>
+				</div>
+			</div>
+			
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="reservations.html">Reservations</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../menu/menu.html">Menu's</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../gallery/gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../contact/contact.html">Contact Us</a>
+				</li>
+			</ul>
+			
+			<section>
+				<div class="central">
+					<h1>Welcome to Katrine's Kitchen & Bar</h1>
+					<h2>Bringing you organic produce straight from farm to table</h2>
+				</div>
+			</section>
+
+			<section id="book-a-table" class="book-a-table">
+				<div class="container" data-aos="fade-up">
+					<form action="" method="post" role="form">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<h2 class="text-primary">Make A Table Reservation</h2>
+								<p class="text-secondary"> Opening Hours: 5pm - 11.30pm (Tuesday to Sunday)</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="number" class="form-control" name="phone" id="phone" placeholder="Your Phone">
+							</div>
+						</div>
+						<div class="row">	
+							<div class="col-lg-4 col-md-6 ">
+								<input type="date" name="date" class="form-control" id="date" placeholder="Date">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="time" class="form-control" name="time" id="time" placeholder="Time">
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<input type="number" class="form-control" name="people" id="people" placeholder="No. of people">
+							</div>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="special-requirements" placeholder="Please let us know if you have any special dietary requirements or if you a celebrating a special occaision!"></textarea>
+						</div>
+					  
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault"> I confirm that all members of my party are fully vacinated against Covid-19
+							</label>
+						</div>				
+						<button type="submit" class="btn btn-primary float-right mt-3">Book a Table</button>
+					</form>
+				</div>
+			</section>
+			
+			<div class="row" id="">			
+				<div class="col-12" "footer">
+					<button onclick="create()">Terms & Conditions</button>			
+					<button onclick="Privacy()">Privacy</button>
+					<button onclick="Covid()">Covid Update</button>
+				</div>
+			</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>			
+		<script src="js/script.js"></script>
+	</body>		
