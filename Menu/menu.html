@@ -1,64 +1,110 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <html>
 	<head>
 		<title>Menu</title>
-		<link rel="stylesheet" href="../style/style.css"/>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="Style/style.css"/> -->
 	</head>
+	
 	<body>
-		<div id="header">
-			<div id="header1"><img src="../images/katrines.jpg" alt="logo" width="200" height="200"></div>
-			<div id="header2">
-				<div class="link"><a href="../index.html">Home</a></div>
-				<div class="link"><a href="../reservations/reservations.html.html">Reservations</a></div>
-				<div class="link"><a href="menu.html">Menus</a></div>
-				<div class="link"><a href="../contact/contact.html">Contact</a></div>
-				<div class="link"><a href="../gallery/gallery.html">Gallery</a></div>
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-4">
+					<img src="../images/katrines.jpg" alt="logo" width="200" height="200">
+				</div>
+				<div class="col-8"> 
+					<h1>Katrine's Kitchen & Bar</h1>
+				</div>
+			</div>
+			
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../reservations/reservations.html">Reservations</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu's</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../gallery/gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../contact/contact.html">Contact Us</a>
+				</li>
+			</ul>
+			
+			<section>	
+				<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <img src="../images/glasses.jfif" class="d-block w-100" alt="glasses">
+					</div>
+					<div class="carousel-item">
+					  <img src="../images/dinner.jpg" class="d-block w-100" alt="irish stew">
+					</div>
+					<div class="carousel-item">
+					  <img src="../images/dinnersetting.jfif" class="d-block w-100" alt="dinner table">
+					</div>
+					
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</section>
+			
+			<section>
+				<div class="central">
+					<h1>Whether you're an early bird or late eater,Katrine's have plenty to choose from. </h1>
+				</div>
+			</section>
+		
+			<section>
+				<div class="row">
+					<div class="col">
+						<p>***************************</p>
+						<p>Early Bird Menu</p>
+						<p>5pm - 7.30pm</p>
+						<button onclick="showeb()"><a href="../images/ebmenu.pdf">Display Early Bird Menu</a></button><p>***************************</p>
+					</div>
+						
+					<div class="col">
+						<p>***************************</p>
+						<p>Set 3 Course Menu</p>
+						<p>last sitting 9.30pm </p>
+						<button onclick="showset()"><a href="../images/setmenu.pdf">Display Set Menu</a></button><p>***************************</p>
+					</div>
+						
+					<div class="col">
+						<p>***************************</p>
+						<p> A La Carte Menu</p>
+						<p>last sitting 9.30pm</p>
+						<button onclick="showalc()"><a href="../images/alcmenu.pdf">Display A La Carte Menu</a></button><p>***************************</p>
+					</div>
+				</div>
+			</section>
+			
+			<div class="row" id="">			
+				<div class="col-12" "footer">
+					<button onclick="create()">Terms & Conditions</button>			
+					<button onclick="Privacy()">Privacy</button>
+					<button onclick="Covid()">Covid Update</button>
+				</div>
 			</div>
 		</div>
-			
-		<div class="row">
-		  <div class="column2">
-			<img src="../images/glasses.jfif" alt="glasses" style="width:100%">
-		  </div>
-		  <div class="column2">
-			<img src="../images/dinner.jpg" alt="irish stew" style="width:100%">
-		  </div>
-		  <div class="column2">
-			<img src="../images/dinnersetting.jfif" alt="dinner table" style="width:100%">
-		  </div>
-		</div>
-		
-		<div class="central">
-		<h1>Whether you're an early bird or late eater,</h1>
-		<h1>Katrine's have plenty to choose from. </h1>
-		</div>
-		
-		<div class="container">
-			<div class="column">
-				<p>***************************</p>
-				<p>Early Bird Menu</p>
-				<p>5pm - 7.30pm</p>
-				<button onclick="showeb()"><a href="../images/ebmenu.pdf">Display Early Bird Menu</a></button><p>***************************</p></div></button>
-				
-			<div class="column">
-				<p>***************************</p>
-				<p>Set 3 Course Menu</p>
-				<p>last sitting 9.30pm </p>
-				<button onclick="showset()"><a href="../images/setmenu.pdf">Display Set Menu</a></button><p>***************************</p></div>
-				
-			<div class="column">
-				<p>***************************</p>
-				<p> A La Carte Menu</p>
-				<p>last sitting 9.30pm</p>
-				<button onclick="showalc()"><a href="../images/alcmenu.pdf">Display A La Carte Menu</a></button><p>***************************</p></div></button>
-				
-		</div>
-		
-		<div id="footer">
-			<button onclick="create()">Terms & Conditions</button>
-			<button onclick="Privacy()">Privacy</button>
-			<button onclick="Covid()">Covid Update</button>
-			<script src="../js/script.js"></script>
-		</div>		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>			
+		<script src="js/script.js"></script>		
 	</body>
 </html>
